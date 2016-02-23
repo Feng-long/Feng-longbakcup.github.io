@@ -1,0 +1,375 @@
+﻿
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="zh-cn">
+
+<title>Demo</title>
+</head>
+
+<body>
+
+<p><font size="6" face="Arial Unicode MS">Demo</font><font size="6" face="Arial Unicode MS">s
+of A Kullback-Leibler Divergence and Deep Neural Net Approach to Voice Conversion</font></p>
+<p>　</p>
+<p><font face="Arial Unicode MS" size="4">Detailes can be found in the paper 
+titled "A Kullback-Leibler Divergence and Deep Neural Net Approach to Voice Conversion". </font></p>
+
+<p><font face="Arial Unicode MS" size="4">3.2.2 Senone Mapping vs. Phonetic Cluster Mapping</font></p>
+<div align="center">
+<table border="1" width="1010">
+	<tbody><tr>
+		<td width="320" align="center"><b>
+		<font face="Arial Unicode MS" size="4">Conversion Pairs</font></b></td>
+		<td width="120" align="center"><b>
+		<font face="Arial Unicode MS" size="4">source natural recordings</font></b></td>
+	   <td width="120" align="center"><b>
+		<font face="Arial Unicode MS" size="4">SM</font></b></td>
+		<td width="120" align="center"><b>
+		<font face="Arial Unicode MS" size="4">PCM</font></b></td>
+		<td width="120" align="center"><b>
+		<font face="Arial Unicode MS" size="4">TTS upperbound</font></b></td>
+	
+		<td width="120" align="center"><b>
+		<font face="Arial Unicode MS" size="4">target natural recordings</font></b></td>
+		
+	</tr>
+	<tr>
+		<td width="320" align="center"><i>
+		<font face="Arial Unicode MS" size="4">SLT to BDL </font></i></td>
+			<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/2/slt.wav">wav</a></font></p></td>
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/2/sltbdlsenone.wav">wav</a></font></p></td>
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/2/sltbdlpcm.wav">wav</a></font></p></td>
+
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/2/bdlttssltprosody.wav">wav</a></font></p></td>
+		
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/2/bdl.wav">wav</a></font></p></td>
+		
+	</tr>
+	
+		<tr>
+		<td width="320" align="center"><i>
+		<font face="Arial Unicode MS" size="4">CLB to SLT</font></i></td>
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/2/clb.wav">wav</a></font></p></td>
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/2/clbsltsenone.wav">wav</a></font></p></td>
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/2/clbsltpcm.wav">wav</a></font></p></td>
+
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/2/sltttsclbprosody.wav">wav</a></font></p></td>
+		
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/2/slt.wav">wav</a></font></p></td>
+	</tr>
+	<tr>
+		<td width="320" align="center"><i>
+		<font face="Arial Unicode MS" size="4">RMS to BDL</font></i></td>
+			<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/2/rms.wav">wav</a></font></p></td>
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/2/rmsbdlsenone.wav">wav</a></font></p></td>
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/2/rmsbdlpcm.wav">wav</a></font></p></td>
+
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/2/bdlttsrmsprosody.wav">wav</a></font></p></td>
+		
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/2/bdl.wav">wav</a></font></p></td>
+	</tr>
+
+	
+
+	
+	</tbody></table>
+</div>
+
+
+
+<p><font face="Arial Unicode MS" size="4">3.2.3 Limited Data</font></p>
+<div align="center">
+<table border="1" width="1010">
+	<tbody><tr>
+		<td width="320" align="center"><b>
+		<font face="Arial Unicode MS" size="4"># of target speaker's utterances</font></b></td>
+		<td width="120" align="center"><b>
+		<font face="Arial Unicode MS" size="4">source natural recordings</font></b></td>
+	   <td width="120" align="center"><b>
+		<font face="Arial Unicode MS" size="4">10</font></b></td>
+		<td width="120" align="center"><b>
+		<font face="Arial Unicode MS" size="4">50</font></b></td>
+		<td width="120" align="center"><b>
+		<font face="Arial Unicode MS" size="4">100</font></b></td>
+		<td width="120" align="center"><b>
+		<font face="Arial Unicode MS" size="4">300</font></b></td>
+		<td width="120" align="center"><b>
+		<font face="Arial Unicode MS" size="4">500</font></b></td>
+		<td width="120" align="center"><b>
+		
+		<font face="Arial Unicode MS" size="4">1000</font></b></td>
+		<td width="120" align="center"><b>
+		
+		<font face="Arial Unicode MS" size="4">TTS upperbound</font></b></td>
+		<td width="120" align="center"><b>
+		<font face="Arial Unicode MS" size="4">target natural recordings</font></b></td>
+		
+	</tr>
+	<tr>
+		<td width="320" align="center"><i>
+		<font face="Arial Unicode MS" size="4">SLT to BDL </font></i></td>
+			<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/3/source.wav">wav</a></font></p></td>
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/3/10.wav">wav</a></font></p></td>
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/3/50.wav">wav</a></font></p></td>
+
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/3/100.wav">wav</a></font></p></td>
+		
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/3/300.wav">wav</a></font></p></td>
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/3/500.wav">wav</a></font></p></td>
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/3/1000.wav">wav</a></font></p></td>
+		
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/3/tts.wav">wav</a></font></p></td>
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/3/target.wav">wav</a></font></p></td>
+		
+	</tr>
+	
+	
+
+	
+
+	
+	</tbody></table>
+</div>
+
+<p><font face="Arial Unicode MS" size="4">3.2.4 Speaker Dependent Phonetic Representation (SLT to BDL)</font></p>
+<div align="center">
+<table border="1" width="1010">
+	<tbody><tr>
+		<td width="320" align="center"><b>
+		<font face="Arial Unicode MS" size="4">SM/PCM</font></b></td>
+		<td width="120" align="center"><b>
+		<font face="Arial Unicode MS" size="4">source natural recordings</font></b></td>
+	   <td width="120" align="center"><b>
+		<font face="Arial Unicode MS" size="4">0</font></b></td>
+		<td width="120" align="center"><b>
+		<font face="Arial Unicode MS" size="4">100</font></b></td>
+		<td width="120" align="center"><b>
+		<font face="Arial Unicode MS" size="4">500</font></b></td>
+		<td width="120" align="center"><b>
+		<font face="Arial Unicode MS" size="4">1000</font></b></td>
+		<td width="120" align="center"><b>
+		<font face="Arial Unicode MS" size="4">TTS Upperbound</font></b></td>
+		
+		<td width="120" align="center"><b>
+		<font face="Arial Unicode MS" size="4">target natural recordings</font></b></td>
+		
+	</tr>
+	<tr>
+		<td width="320" align="center"><i>
+		<font face="Arial Unicode MS" size="4">Senone Mapping </font></i></td>
+			<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/4/source.wav">wav</a></font></p></td>
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/4/senone0.wav">wav</a></font></p></td>
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/4/senone100.wav">wav</a></font></p></td>
+
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/4/senone500.wav">wav</a></font></p></td>
+		
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/4/senone1000.wav">wav</a></font></p></td>
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/4/TTSupperbound.wav">wav</a></font></p></td>
+		
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/4/target.wav">wav</a></font></p></td>
+	</tr>
+	<tr>
+		<td width="320" align="center"><i>
+		<font face="Arial Unicode MS" size="4">Phonetic Cluster Mapping </font></i></td>
+			<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/4/source.wav">wav</a></font></p></td>
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/4/cluster0.wav">wav</a></font></p></td>
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/4/cluster100.wav">wav</a></font></p></td>
+
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/4/cluster500.wav">wav</a></font></p></td>
+		
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/4/cluster1000.wav">wav</a></font></p></td>
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/4/TTSupperbound.wav">wav</a></font></p></td>
+		
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/4/target.wav">wav</a></font></p></td>
+	</tr>
+	
+
+	
+
+	
+	</tbody></table>
+</div>
+
+
+
+
+<p><font face="Arial Unicode MS" size="4">3.2.5 KLD-DNN vs SEM-DNN</font></p>
+<div align="center">
+<table border="1" width="1010">
+	<tbody><tr>
+		<td width="320" align="center"><b>
+		<font face="Arial Unicode MS" size="4">Conversion Pairs</font></b></td>
+		<td width="120" align="center"><b>
+		<font face="Arial Unicode MS" size="4">source natural recordings</font></b></td>
+	   <td width="120" align="center"><b>
+		<font face="Arial Unicode MS" size="4">PCM-100</font></b></td>
+		<td width="120" align="center"><b>
+		<font face="Arial Unicode MS" size="4">PCM-A-100</font></b></td>
+		<td width="120" align="center"><b>
+		<font face="Arial Unicode MS" size="4">SEM-NN-100</font></b></td>
+	    <td width="120" align="center"><b>
+		<font face="Arial Unicode MS" size="4">TTS upperbound(1000 utteranes trained)</font></b></td>
+		<td width="120" align="center"><b>
+		<font face="Arial Unicode MS" size="4">target natural recordings</font></b></td>
+		
+	</tr>
+	<tr>
+		<td width="320" align="center"><i>
+		<font face="Arial Unicode MS" size="4">SLT to BDL </font></i></td>
+			<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/5/source.wav">wav</a></font></p></td>
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/5/pcm.wav">wav</a></font></p></td>
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/5/adapt.wav">wav</a></font></p></td>
+
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/5/sem.wav">wav</a></font></p></td>
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/5/tts.wav">wav</a></font></p></td>
+		<td align="center" width="120">
+		<p align="center"><font face="Arial Unicode MS" size="4">
+
+		<a href="https://dl.dropboxusercontent.com/u/69288147/VCdemo/5/target.wav">wav</a></font></p></td>
+		
+	</tr>
+	
+	
+
+	
+	</tbody></table>
+</div>
+
+
+<p><font face="Arial Unicode MS" size="4">Last Updated: 23-February-2016</font></p>
+<p>　</p>
+<p>　</p>
+
+
+
+
+</body></html>
