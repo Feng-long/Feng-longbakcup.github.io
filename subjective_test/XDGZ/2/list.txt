@@ -1,0 +1,10 @@
+file 002493_f.wav
+file 002495_f.wav
+file 002496_f.wav
+file 002505_f.wav
+file 002510_f.wav
+file 002512_f.wav
+file 002513_f.wav
+file 002514_f.wav
+file 002516_f.wav
+file 002520_f.wav
