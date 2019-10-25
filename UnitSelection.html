@@ -1,173 +1,49 @@
 
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta http-equiv="Content-Language" content="zh-cn">
-
-<title>Demos</title>
-</head>
-
-<body>
-
-<p><font size="8" face="Arial Unicode MS">Samples</font><font size="8" face="Arial Unicode MS">
-of Unit Selection Approach to Any-to-One Voice Conversion </font></p>
-<p>　</p>
-<p><font face="Arial Unicode MS" size="6" align="center">Submitted to ICASSP 2020 </font></p>
-
-  <table width="600" height="250" border="1" align="center" font face="Arial Unicode MS" font size="6">
-  <tr>
-   <td align="center" valign="middle" >&nbsp;&nbsp;<span class="wav_name" >I&nbsp;&nbsp;</span></td>
-   <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Baseline System [1] &nbsp;&nbsp;</span></td>
- 
-  </tr>
+  <meta http-equiv="Content-Language" content="zh-cn">
+  
+      <title>AN IMPROVED FRAME-UNIT-SELECTION BASED VOICE CONVERSION SYSTEM WITHOUT PARALLEL TRAINING DATA
+  </title>
+  </head>
+  
+  <body>
+    <article>
+      <header>
+          <h1>AN IMPROVED FRAME-UNIT-SELECTION BASED VOICE CONVERSION SYSTEM WITHOUT PARALLEL TRAINING DATA</h1>
+      </header>
+  </article>
+  <div><b>Authors:</b>Feng-Long Xie, Xin-Hui Li, Bo Liu, Yi-Bin Zheng, Li Meng, Li Lu, Frank K. Soong</a> (Submitted to ICASSP 2020</a>)</div>
+  
+  <div><b>Abstract:</b> A frame-unit-selection based voice conversion system proposed earlier by us is revisited here to enhance its performance in both speech naturalness and speaker similarity. Speaker independent, bilingual (Mandarin Chinese and American English) deep neural net (DNN) acoustic model’s output, frame-level phone posterior probability (PPP), is used to represent the phonetic information. The corresponding frame-level F0 is used as the prosodic information. Kullback-Leibler divergence (KLD) between source and target PPPs (phonetic distortion) and the absolute difference between normalized source and target F0 (prosodic distortion) are used for selecting target frame candidates to construct a search lattice. The optimal target unit trajectory is obtained by Viterbi algorithm which tries to minimize the dynamic acoustic difference between the acoustic trajectory of the source speech and target candidates. The obtained spectral trajectory together with the enhanced pitch period and pitch correlation trajectory are sent to LPCNet vocoder to synthesize the converted waveforms. Compared with the top-rank system in Voice Conversion Challenge 2018, our new system can achieve on-par performance on studio to studio American English VC test, and better performance on non-studio to studio Mandarin Chinese VC test, in both speech naturalness MOS and speaker similarity DMOS.
+  </div>
+  
+  <div style="text-align:center">
+  <p><font face="Arial Unicode MS" size="6">Systems </font></p>
+  </div>
+    <table width="400" height="200" border="1" align="center" font face="Arial Unicode MS" font size="6">
+    <tr>
+     <td align="center" valign="middle" >&nbsp;&nbsp;<span class="wav_name" >I&nbsp;&nbsp;</span></td>
+     <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Baseline System [1] &nbsp;&nbsp;</span></td>
    
-  <tr>
-   <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">II&nbsp;&nbsp;</span></td>
-   <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Baseline System [2]&nbsp;&nbsp;</span></td>
- 
-  </tr>
-  
-   <tr>
-   <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">III&nbsp;&nbsp;</span></td>
-   <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Proposed System &nbsp;&nbsp;</span></td>
- 
-
-   </table>
-   <p><font face="Arial Unicode MS" size="3">[1] F.-L. Xie, F. K. Soong, H. Li, "Voice conversion with SI-DNN and KL divergence based mapping without parallel training data," Speech Communication, vol. 106 , pp. 57-67, 2019</font></p>
-   <p><font face="Arial Unicode MS" size="3">  [2] L.-j. Liu, Z.-H. Ling, Y. Jiang, et al, "WaveNet Vocoder with Limited Training Data for Voice Conversion," in Proc. Interspeech, pp. 1983-1987, 2018.</font></p>
+    </tr>
+     
+    <tr>
+     <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">II&nbsp;&nbsp;</span></td>
+     <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Baseline System [2]&nbsp;&nbsp;</span></td>
    
-	<div style="text-align:center">
-<p><font face="Arial Unicode MS" size="6">English: CMU ARCTIC database, source studio recording </font></p>
-</div>
-	   <table width="604" height="69" border="1" align="center">
-  <tr>
-   <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">&nbsp;&nbsp;</span></td>
-   <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Source &nbsp;&nbsp;</span></td>
-   <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">I&nbsp;&nbsp;</span></td>
-	     <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">II&nbsp;&nbsp;</span></td>
-		  <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">III&nbsp;&nbsp;</span></td>
-		 <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Target&nbsp;&nbsp;</span></td>
-			
-</audio>&nbsp;&nbsp;</td>
-  </tr>
-
-
-  <tr>
-
-    <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">SLT -> BDL(arctic_a0018)&nbsp;&nbsp;</span></td>
-  <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
- <source src="ICASSPdemo/s/sltarctic_a0018.wav" type="audio/wav">  
-
-</audio>&nbsp;&nbsp;</td>
-     <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
- <source src="ICASSPdemo/1/slt_bdlarctic_a0018.wav" type="audio/wav">  
-
-</audio>&nbsp;&nbsp;</td>
-       <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-<source src="ICASSPdemo/2/slt_bdlarctic_a0018.wav" type="audio/wav">  
-
-
-</audio>&nbsp;&nbsp;</td>
-<td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-<source src="ICASSPdemo/3/slt_bdlarctic_a0018.wav" type="audio/wav">  
-
-</audio>&nbsp;&nbsp;</td>
-<td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-<source src="ICASSPdemo/t/bdlarctic_a0018.wav" type="audio/wav">  
-
-</audio>&nbsp;&nbsp;</td>
- </tr>
- 
- 
-  
-  
-  <tr>
-  
-    <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">RMS -> BDL(arctic_a0015)&nbsp;&nbsp;</span></td>
-  <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-  <source src="ICASSPdemo/s/rmsarctic_a0015.wav" type="audio/wav">  
-  
-  </audio>&nbsp;&nbsp;</td>
-     <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-  <source src="ICASSPdemo/1/rms_bdlarctic_a0015.wav" type="audio/wav">  
-  
-  </audio>&nbsp;&nbsp;</td>
-       <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-  <source src="ICASSPdemo/2/rms_bdlarctic_a0015.wav" type="audio/wav">  
-  
-  
-  </audio>&nbsp;&nbsp;</td>
-  <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-  <source src="ICASSPdemo/3/rms_bdlarctic_a0015.wav" type="audio/wav">  
-  
-  </audio>&nbsp;&nbsp;</td>
-  <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-  <source src="ICASSPdemo/t/bdlarctic_a0015.wav" type="audio/wav">  
-  
-  </audio>&nbsp;&nbsp;</td>
-       
-  </tr>
-      
-   <tr>
-  
+    </tr>
+    
+     <tr>
+     <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">III&nbsp;&nbsp;</span></td>
+     <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Proposed System &nbsp;&nbsp;</span></td>
    
   
- 
-  <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">CLB -> SLT(arctic_a0005)&nbsp;&nbsp;</span></td>
-<td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-<source src="ICASSPdemo/s/clbarctic_a0005.wav" type="audio/wav">  
-
-</audio>&nbsp;&nbsp;</td>
-   <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-<source src="ICASSPdemo/1/clb_sltarctic_a0005.wav" type="audio/wav">  
-
-</audio>&nbsp;&nbsp;</td>
-     <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-<source src="ICASSPdemo/2/clb_sltarctic_a0005.wav" type="audio/wav">  
-
-
-</audio>&nbsp;&nbsp;</td>
-<td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-<source src="ICASSPdemo/3/clb_sltarctic_a0005.wav" type="audio/wav">  
-
-</audio>&nbsp;&nbsp;</td>
-<td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-<source src="ICASSPdemo/t/sltarctic_a0005.wav" type="audio/wav">  
-
-</audio>&nbsp;&nbsp;</td>     
-</tr>
- 
-
-
- 
-
-<tr>
-
-  <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">BDL -> SLT(arctic_a0009)&nbsp;&nbsp;</span></td>
-<td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-<source src="ICASSPdemo/s/bdlarctic_a0009.wav" type="audio/wav">  
-
-</audio>&nbsp;&nbsp;</td>
-   <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-<source src="ICASSPdemo/1/bdl_sltarctic_a0009.wav" type="audio/wav">  
-
-</audio>&nbsp;&nbsp;</td>
-     <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-<source src="ICASSPdemo/2/bdl_sltarctic_a0009.wav" type="audio/wav">  
-
-
-</audio>&nbsp;&nbsp;</td>
-<td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-<source src="ICASSPdemo/3/bdl_sltarctic_a0009.wav" type="audio/wav">  
-
-</audio>&nbsp;&nbsp;</td>
-<td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-  <source src="ICASSPdemo/t/sltarctic_a0009.wav" type="audio/wav">  
-  
-  </audio>&nbsp;&nbsp;</td>      
-</tr>
- 	</table> 
-
-<div style="text-align:center">
-  <p><font face="Arial Unicode MS" size="6">Mandarin: Wechat Internal database, source non-studio recording </font></p>
+     </table>
+     <p><font face="Arial Unicode MS" size="3">[1] F.-L. Xie, F. K. Soong, H. Li, "Voice conversion with SI-DNN and KL divergence based mapping without parallel training data," Speech Communication, vol. 106 , pp. 57-67, 2019</font></p>
+     <p><font face="Arial Unicode MS" size="3">  [2] L.-j. Liu, Z.-H. Ling, Y. Jiang, et al, "WaveNet Vocoder with Limited Training Data for Voice Conversion," in Proc. Interspeech, pp. 1983-1987, 2018.</font></p>
+     
+    <div style="text-align:center">
+  <p><font face="Arial Unicode MS" size="6">American English: CMU ARCTIC database, source studio recording </font></p>
   </div>
        <table width="604" height="69" border="1" align="center">
     <tr>
@@ -180,299 +56,431 @@ of Unit Selection Approach to Any-to-One Voice Conversion </font></p>
         
   </audio>&nbsp;&nbsp;</td>
     </tr>
+  
+  
     <tr>
-
-      <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">FL -> GZ&nbsp;&nbsp;</span></td>
+  
+      <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">SLT -> BDL(arctic_a0018)&nbsp;&nbsp;</span></td>
     <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-   <source src="ICASSPdemo/s/002520_m.wav" type="audio/wav">  
+   <source src="ICASSPdemo/s/sltarctic_a0018.wav" type="audio/wav">  
   
   </audio>&nbsp;&nbsp;</td>
        <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-   <source src="ICASSPdemo/1/002520_m.wav" type="audio/wav">  
+   <source src="ICASSPdemo/1/slt_bdlarctic_a0018.wav" type="audio/wav">  
   
   </audio>&nbsp;&nbsp;</td>
          <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-  <source src="ICASSPdemo/2/002520_m.wav" type="audio/wav">  
-  
-  
-  </audio>&nbsp;&nbsp;</td>
-  
-  <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-  <source src="ICASSPdemo/3/002520_m.wav" type="audio/wav">  
-  
-  </audio>&nbsp;&nbsp;</td>
-  <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-  <source src="ICASSPdemo/t/002520.wav" type="audio/wav">  
-  
-  </audio>&nbsp;&nbsp;</td>
-</tr>
- 
-
-
- 
-
-<tr>
-  <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">FL -> GZ&nbsp;&nbsp;</span></td>
-    <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-   <source src="ICASSPdemo/s/002512_m.wav" type="audio/wav">  
-  
-  </audio>&nbsp;&nbsp;</td>
-       <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-   <source src="ICASSPdemo/1/002512_m.wav" type="audio/wav">  
-  
-  </audio>&nbsp;&nbsp;</td>
-         <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-  <source src="ICASSPdemo/2/002512_m.wav" type="audio/wav">  
+  <source src="ICASSPdemo/2/slt_bdlarctic_a0018.wav" type="audio/wav">  
   
   
   </audio>&nbsp;&nbsp;</td>
   <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-  <source src="ICASSPdemo/3/002512_m.wav" type="audio/wav">  
+  <source src="ICASSPdemo/3/slt_bdlarctic_a0018.wav" type="audio/wav">  
   
   </audio>&nbsp;&nbsp;</td>
   <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-  <source src="ICASSPdemo/t/002512.wav" type="audio/wav">  
-
-
-  </audio>&nbsp;&nbsp;</td>
-</tr>
- 
-
-
- 
-
-<tr>
-  <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">PZ -> GZ&nbsp;&nbsp;</span></td>
-    <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-   <source src="ICASSPdemo/s/002505_f.wav" type="audio/wav">  
+  <source src="ICASSPdemo/t/bdlarctic_a0018.wav" type="audio/wav">  
   
-  </audio>&nbsp;&nbsp;</td>
-       <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-   <source src="ICASSPdemo/1/002505_f.wav" type="audio/wav">  
-  
-  </audio>&nbsp;&nbsp;</td>
-         <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-  <source src="ICASSPdemo/2/002505_f.wav" type="audio/wav">  
-  
-  
-  </audio>&nbsp;&nbsp;</td>
-  <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-  <source src="ICASSPdemo/3/002505_f.wav" type="audio/wav">  
-  
-  </audio>&nbsp;&nbsp;</td>
-  <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-  <source src="ICASSPdemo/t/002505.wav" type="audio/wav">  
-
-  </audio>&nbsp;&nbsp;</td>
-</tr>
- 
-
-
- 
-
-<tr>
-  <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">PZ -> GZ&nbsp;&nbsp;</span></td>
-    <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-   <source src="ICASSPdemo/s/002516_f.wav" type="audio/wav">  
-  
-  </audio>&nbsp;&nbsp;</td>
-       <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-   <source src="ICASSPdemo/1/002516_f.wav" type="audio/wav">  
-  
-  </audio>&nbsp;&nbsp;</td>
-         <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-  <source src="ICASSPdemo/2/002516_f.wav" type="audio/wav">  
-  
-  
-  </audio>&nbsp;&nbsp;</td>
-  <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-  <source src="ICASSPdemo/3/002516_f.wav" type="audio/wav">  
-  
-  </audio>&nbsp;&nbsp;</td>
-  <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-  <source src="ICASSPdemo/t/002516.wav" type="audio/wav">  
-
   </audio>&nbsp;&nbsp;</td>
    </tr>
- 
    
-   <tr>
-    <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">PZ -> DJ&nbsp;&nbsp;</span></td>
-      <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-     <source src="ICASSPdemo/s/010005_f.wav" type="audio/wav">  
+   
+    
+    
+    <tr>
+    
+      <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">RMS -> BDL(arctic_a0015)&nbsp;&nbsp;</span></td>
+    <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+    <source src="ICASSPdemo/s/rmsarctic_a0015.wav" type="audio/wav">  
+    
+    </audio>&nbsp;&nbsp;</td>
+       <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+    <source src="ICASSPdemo/1/rms_bdlarctic_a0015.wav" type="audio/wav">  
     
     </audio>&nbsp;&nbsp;</td>
          <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-     <source src="ICASSPdemo/1/010005_f.wav" type="audio/wav">  
+    <source src="ICASSPdemo/2/rms_bdlarctic_a0015.wav" type="audio/wav">  
+    
+    
+    </audio>&nbsp;&nbsp;</td>
+    <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+    <source src="ICASSPdemo/3/rms_bdlarctic_a0015.wav" type="audio/wav">  
+    
+    </audio>&nbsp;&nbsp;</td>
+    <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+    <source src="ICASSPdemo/t/bdlarctic_a0015.wav" type="audio/wav">  
+    
+    </audio>&nbsp;&nbsp;</td>
+         
+    </tr>
+        
+     <tr>
+    
+     
+    
+   
+    <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">CLB -> SLT(arctic_a0005)&nbsp;&nbsp;</span></td>
+  <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+  <source src="ICASSPdemo/s/clbarctic_a0005.wav" type="audio/wav">  
+  
+  </audio>&nbsp;&nbsp;</td>
+     <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+  <source src="ICASSPdemo/1/clb_sltarctic_a0005.wav" type="audio/wav">  
+  
+  </audio>&nbsp;&nbsp;</td>
+       <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+  <source src="ICASSPdemo/2/clb_sltarctic_a0005.wav" type="audio/wav">  
+  
+  
+  </audio>&nbsp;&nbsp;</td>
+  <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+  <source src="ICASSPdemo/3/clb_sltarctic_a0005.wav" type="audio/wav">  
+  
+  </audio>&nbsp;&nbsp;</td>
+  <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+  <source src="ICASSPdemo/t/sltarctic_a0005.wav" type="audio/wav">  
+  
+  </audio>&nbsp;&nbsp;</td>     
+  </tr>
+   
+  
+  
+   
+  
+  <tr>
+  
+    <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">BDL -> SLT(arctic_a0009)&nbsp;&nbsp;</span></td>
+  <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+  <source src="ICASSPdemo/s/bdlarctic_a0009.wav" type="audio/wav">  
+  
+  </audio>&nbsp;&nbsp;</td>
+     <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+  <source src="ICASSPdemo/1/bdl_sltarctic_a0009.wav" type="audio/wav">  
+  
+  </audio>&nbsp;&nbsp;</td>
+       <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+  <source src="ICASSPdemo/2/bdl_sltarctic_a0009.wav" type="audio/wav">  
+  
+  
+  </audio>&nbsp;&nbsp;</td>
+  <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+  <source src="ICASSPdemo/3/bdl_sltarctic_a0009.wav" type="audio/wav">  
+  
+  </audio>&nbsp;&nbsp;</td>
+  <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+    <source src="ICASSPdemo/t/sltarctic_a0009.wav" type="audio/wav">  
+    
+    </audio>&nbsp;&nbsp;</td>      
+  </tr>
+     </table> 
+  
+  <div style="text-align:center">
+    <p><font face="Arial Unicode MS" size="6">Mandarin Chinese: Wechat Voice Conversion database, source non-studio recording </font></p>
+    </div>
+         <table width="604" height="69" border="1" align="center">
+      <tr>
+       <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">&nbsp;&nbsp;</span></td>
+       <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Source &nbsp;&nbsp;</span></td>
+       <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">I&nbsp;&nbsp;</span></td>
+           <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">II&nbsp;&nbsp;</span></td>
+          <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">III&nbsp;&nbsp;</span></td>
+         <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Target&nbsp;&nbsp;</span></td>
+          
+    </audio>&nbsp;&nbsp;</td>
+      </tr>
+      <tr>
+  
+        <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">FL -> GZ&nbsp;&nbsp;</span></td>
+      <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+     <source src="ICASSPdemo/s/002520_m.wav" type="audio/wav">  
+    
+    </audio>&nbsp;&nbsp;</td>
+         <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+     <source src="ICASSPdemo/1/002520_m.wav" type="audio/wav">  
     
     </audio>&nbsp;&nbsp;</td>
            <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-    <source src="ICASSPdemo/2/010005_f.wav" type="audio/wav">  
+    <source src="ICASSPdemo/2/002520_m.wav" type="audio/wav">  
+    
+    
+    </audio>&nbsp;&nbsp;</td>
+    
+    <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+    <source src="ICASSPdemo/3/002520_m.wav" type="audio/wav">  
+    
+    </audio>&nbsp;&nbsp;</td>
+    <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+    <source src="ICASSPdemo/t/002520.wav" type="audio/wav">  
+    
+    </audio>&nbsp;&nbsp;</td>
+  </tr>
+   
+  
+  
+   
+  
+  <tr>
+    <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">FL -> GZ&nbsp;&nbsp;</span></td>
+      <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+     <source src="ICASSPdemo/s/002512_m.wav" type="audio/wav">  
+    
+    </audio>&nbsp;&nbsp;</td>
+         <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+     <source src="ICASSPdemo/1/002512_m.wav" type="audio/wav">  
+    
+    </audio>&nbsp;&nbsp;</td>
+           <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+    <source src="ICASSPdemo/2/002512_m.wav" type="audio/wav">  
     
     
     </audio>&nbsp;&nbsp;</td>
     <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-    <source src="ICASSPdemo/3/010005_f.wav" type="audio/wav">  
+    <source src="ICASSPdemo/3/002512_m.wav" type="audio/wav">  
     
     </audio>&nbsp;&nbsp;</td>
     <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-    <source src="ICASSPdemo/t/010005.wav" type="audio/wav">  
+    <source src="ICASSPdemo/t/002512.wav" type="audio/wav">  
+  
+  
+    </audio>&nbsp;&nbsp;</td>
+  </tr>
+   
+  
+  
+   
+  
+  <tr>
+    <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">PZ -> GZ&nbsp;&nbsp;</span></td>
+      <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+     <source src="ICASSPdemo/s/002505_f.wav" type="audio/wav">  
+    
+    </audio>&nbsp;&nbsp;</td>
+         <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+     <source src="ICASSPdemo/1/002505_f.wav" type="audio/wav">  
+    
+    </audio>&nbsp;&nbsp;</td>
+           <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+    <source src="ICASSPdemo/2/002505_f.wav" type="audio/wav">  
+    
+    
+    </audio>&nbsp;&nbsp;</td>
+    <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+    <source src="ICASSPdemo/3/002505_f.wav" type="audio/wav">  
+    
+    </audio>&nbsp;&nbsp;</td>
+    <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+    <source src="ICASSPdemo/t/002505.wav" type="audio/wav">  
+  
+    </audio>&nbsp;&nbsp;</td>
+  </tr>
+   
+  
+  
+   
+  
+  <tr>
+    <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">PZ -> GZ&nbsp;&nbsp;</span></td>
+      <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+     <source src="ICASSPdemo/s/002516_f.wav" type="audio/wav">  
+    
+    </audio>&nbsp;&nbsp;</td>
+         <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+     <source src="ICASSPdemo/1/002516_f.wav" type="audio/wav">  
+    
+    </audio>&nbsp;&nbsp;</td>
+           <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+    <source src="ICASSPdemo/2/002516_f.wav" type="audio/wav">  
+    
+    
+    </audio>&nbsp;&nbsp;</td>
+    <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+    <source src="ICASSPdemo/3/002516_f.wav" type="audio/wav">  
+    
+    </audio>&nbsp;&nbsp;</td>
+    <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+    <source src="ICASSPdemo/t/002516.wav" type="audio/wav">  
   
     </audio>&nbsp;&nbsp;</td>
      </tr>
+   
+     
      <tr>
       <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">PZ -> DJ&nbsp;&nbsp;</span></td>
         <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-       <source src="ICASSPdemo/s/010007_f.wav" type="audio/wav">  
+       <source src="ICASSPdemo/s/010005_f.wav" type="audio/wav">  
       
       </audio>&nbsp;&nbsp;</td>
            <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-       <source src="ICASSPdemo/1/010007_f.wav" type="audio/wav">  
+       <source src="ICASSPdemo/1/010005_f.wav" type="audio/wav">  
       
       </audio>&nbsp;&nbsp;</td>
              <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-      <source src="ICASSPdemo/2/010007_f.wav" type="audio/wav">  
+      <source src="ICASSPdemo/2/010005_f.wav" type="audio/wav">  
       
       
       </audio>&nbsp;&nbsp;</td>
       <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-      <source src="ICASSPdemo/3/010007_f.wav" type="audio/wav">  
+      <source src="ICASSPdemo/3/010005_f.wav" type="audio/wav">  
       
       </audio>&nbsp;&nbsp;</td>
       <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-      <source src="ICASSPdemo/t/010007.wav" type="audio/wav">  
+      <source src="ICASSPdemo/t/010005.wav" type="audio/wav">  
     
       </audio>&nbsp;&nbsp;</td>
-       </tr>     
+       </tr>
        <tr>
-        <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">FL -> DJ&nbsp;&nbsp;</span></td>
+        <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">PZ -> DJ&nbsp;&nbsp;</span></td>
           <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-         <source src="ICASSPdemo/s/010005_m.wav" type="audio/wav">  
+         <source src="ICASSPdemo/s/010007_f.wav" type="audio/wav">  
         
         </audio>&nbsp;&nbsp;</td>
              <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-         <source src="ICASSPdemo/1/010005_m.wav" type="audio/wav">  
+         <source src="ICASSPdemo/1/010007_f.wav" type="audio/wav">  
         
         </audio>&nbsp;&nbsp;</td>
                <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-        <source src="ICASSPdemo/2/010005_m.wav" type="audio/wav">  
+        <source src="ICASSPdemo/2/010007_f.wav" type="audio/wav">  
         
         
         </audio>&nbsp;&nbsp;</td>
         <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-        <source src="ICASSPdemo/3/010005_m.wav" type="audio/wav">  
+        <source src="ICASSPdemo/3/010007_f.wav" type="audio/wav">  
         
         </audio>&nbsp;&nbsp;</td>
         <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-        <source src="ICASSPdemo/t/010005.wav" type="audio/wav">  
+        <source src="ICASSPdemo/t/010007.wav" type="audio/wav">  
       
         </audio>&nbsp;&nbsp;</td>
-         </tr>
-
-
+         </tr>     
          <tr>
           <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">FL -> DJ&nbsp;&nbsp;</span></td>
             <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-           <source src="ICASSPdemo/s/010007_m.wav" type="audio/wav">  
+           <source src="ICASSPdemo/s/010005_m.wav" type="audio/wav">  
           
           </audio>&nbsp;&nbsp;</td>
                <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-           <source src="ICASSPdemo/1/010007_m.wav" type="audio/wav">  
+           <source src="ICASSPdemo/1/010005_m.wav" type="audio/wav">  
           
           </audio>&nbsp;&nbsp;</td>
                  <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-          <source src="ICASSPdemo/2/010007_m.wav" type="audio/wav">  
+          <source src="ICASSPdemo/2/010005_m.wav" type="audio/wav">  
           
           
           </audio>&nbsp;&nbsp;</td>
           <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-          <source src="ICASSPdemo/3/010007_m.wav" type="audio/wav">  
+          <source src="ICASSPdemo/3/010005_m.wav" type="audio/wav">  
           
           </audio>&nbsp;&nbsp;</td>
           <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-          <source src="ICASSPdemo/t/010007.wav" type="audio/wav">  
+          <source src="ICASSPdemo/t/010005.wav" type="audio/wav">  
         
           </audio>&nbsp;&nbsp;</td>
            </tr>
-</table>
-
-
-
-
-
-
-
-<table width="604" height="69" border="1" align="center">
-  <tr>
-   <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">&nbsp;&nbsp;</span></td>
-   <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">No Add noise  &nbsp;&nbsp;</span></td>
-   <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Add noise, SNR = 30 dB &nbsp;&nbsp;</span></td>
-	     <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Add noise, SNR = 20 dB &nbsp;&nbsp;</span></td>
-		  <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Add noise, SNR = 10 dB &nbsp;&nbsp;</span></td>
-		 <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Add noise, SNR = 0 dB&nbsp;&nbsp;</span></td>
-			
-</audio>&nbsp;&nbsp;</td>
-  </tr>
-
-  <div style="text-align:center">
-    <p><font face="Arial Unicode MS" size="6">Proposed systems's robustness to the enviromental noise </font></p>
-    </div>
-  <tr>
-
-    <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Source &nbsp;&nbsp;</span></td>
-  <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
- <source src="ICASSPdemo/s/010005_f.wav" type="audio/wav">  
-
-</audio>&nbsp;&nbsp;</td>
-     <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
- <source src="ICASSPdemo/s/010005_f3.wav" type="audio/wav">  
-
-</audio>&nbsp;&nbsp;</td>
+  
+  
+           <tr>
+            <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">FL -> DJ&nbsp;&nbsp;</span></td>
+              <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+             <source src="ICASSPdemo/s/010007_m.wav" type="audio/wav">  
+            
+            </audio>&nbsp;&nbsp;</td>
+                 <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+             <source src="ICASSPdemo/1/010007_m.wav" type="audio/wav">  
+            
+            </audio>&nbsp;&nbsp;</td>
+                   <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+            <source src="ICASSPdemo/2/010007_m.wav" type="audio/wav">  
+            
+            
+            </audio>&nbsp;&nbsp;</td>
+            <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+            <source src="ICASSPdemo/3/010007_m.wav" type="audio/wav">  
+            
+            </audio>&nbsp;&nbsp;</td>
+            <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+            <source src="ICASSPdemo/t/010007.wav" type="audio/wav">  
+          
+            </audio>&nbsp;&nbsp;</td>
+             </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <table width="604" height="69" border="1" align="center">
+    <tr>
+     <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">&nbsp;&nbsp;</span></td>
+     <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Original  &nbsp;&nbsp;</span></td>
+     <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Add noise, SNR = 30 dB &nbsp;&nbsp;</span></td>
+         <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Add noise, SNR = 20 dB &nbsp;&nbsp;</span></td>
+        <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Add noise, SNR = 10 dB &nbsp;&nbsp;</span></td>
+       <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Add noise, SNR = 0 dB&nbsp;&nbsp;</span></td>
+        
+  </audio>&nbsp;&nbsp;</td>
+    </tr>
+  
+    <div style="text-align:center">
+      <p><font face="Arial Unicode MS" size="6">Proposed systems' robustness to the enviromental noise </font></p>
+      </div>
+    <tr>
+  
+      <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Source &nbsp;&nbsp;</span></td>
+    <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+   <source src="ICASSPdemo/s/010005_f.wav" type="audio/wav">  
+  
+  </audio>&nbsp;&nbsp;</td>
        <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-<source src="ICASSPdemo/s/010005_f2.wav" type="audio/wav">  
-
-
-</audio>&nbsp;&nbsp;</td>
-<td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-<source src="ICASSPdemo/s/010005_f1.wav" type="audio/wav">  
-
-</audio>&nbsp;&nbsp;</td>
-<td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-<source src="ICASSPdemo/s/010005_f0.wav" type="audio/wav">  
-
-</audio>&nbsp;&nbsp;</td>
- </tr>
-
- <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Convert &nbsp;&nbsp;</span></td>
-  <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-    <source src="ICASSPdemo/noise/010005_f.wav" type="audio/wav">  
-
-    </audio>&nbsp;&nbsp;</td>
+   <source src="ICASSPdemo/s/010005_f3.wav" type="audio/wav">  
+  
+  </audio>&nbsp;&nbsp;</td>
          <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-     <source src="ICASSPdemo/noise/010005_f3.wav" type="audio/wav">  
-    
-    </audio>&nbsp;&nbsp;</td>
+  <source src="ICASSPdemo/s/010005_f2.wav" type="audio/wav">  
+  
+  
+  </audio>&nbsp;&nbsp;</td>
+  <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+  <source src="ICASSPdemo/s/010005_f1.wav" type="audio/wav">  
+  
+  </audio>&nbsp;&nbsp;</td>
+  <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+  <source src="ICASSPdemo/s/010005_f0.wav" type="audio/wav">  
+  
+  </audio>&nbsp;&nbsp;</td>
+   </tr>
+  
+   <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Convert &nbsp;&nbsp;</span></td>
+    <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+      <source src="ICASSPdemo/noise/010005_f.wav" type="audio/wav">  
+  
+      </audio>&nbsp;&nbsp;</td>
            <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-    <source src="ICASSPdemo/noise/010005_f2.wav" type="audio/wav">  
-    
-    
-    </audio>&nbsp;&nbsp;</td>
-    <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-    <source src="ICASSPdemo/noise/010005_f1.wav" type="audio/wav">  
-    
-    </audio>&nbsp;&nbsp;</td>
-    <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
-    <source src="ICASSPdemo/noise/010005_f0.wav" type="audio/wav">  
-
-</audio>&nbsp;&nbsp;</td>
- </tr>
-</table>
-
-<p><font face="Arial Unicode MS" size="6">Last Updated: 12-Oct-2019</font></p>
-<p>　</p>
-<p>　</p>
-
-
-
-
-</body></html>
+       <source src="ICASSPdemo/noise/010005_f3.wav" type="audio/wav">  
+      
+      </audio>&nbsp;&nbsp;</td>
+             <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+      <source src="ICASSPdemo/noise/010005_f2.wav" type="audio/wav">  
+      
+      
+      </audio>&nbsp;&nbsp;</td>
+      <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+      <source src="ICASSPdemo/noise/010005_f1.wav" type="audio/wav">  
+      
+      </audio>&nbsp;&nbsp;</td>
+      <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+      <source src="ICASSPdemo/noise/010005_f0.wav" type="audio/wav">  
+  
+  </audio>&nbsp;&nbsp;</td>
+   </tr>
+  </table>
+  
+  <p><font face="Arial Unicode MS" size="6">Last Updated: 22-Oct-2019</font></p>
+  <p>　</p>
+  <p>　</p>
+  
+  
+  
+  
+  </body></html>
