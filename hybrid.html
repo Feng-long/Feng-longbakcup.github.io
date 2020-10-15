@@ -1,0 +1,187 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Language" content="zh-cn">
+  
+      <title>AN IMPROVED HIGH QUALITY, REAL-TIME, HYBRID TEXT-TO-SPEECH SYNTHESIS SYSTEM
+  </title>
+  </head>
+  
+  <body>
+    <article>
+      <header>
+          <h1>AAN IMPROVED HIGH QUALITY, REAL-TIME, HYBRID TEXT-TO-SPEECH SYNTHESIS SYSTEM</h1>
+      </header>
+  </article>
+  <div><b>Authors:</b>Feng-Long Xie, Xin-Hui Li, Wen-chao Su, Li Lu, Frank K. Soong</a> (Submitted to ICASSP 2021</a>)</div>
+  
+  <div><b>Abstract:</b> A trajectory tiling based hybrid text-to-speech system is revisted here to further enhance its synthesis performance. A combination of self-attention based encode and RNN based decoder  architecture incorporating two-level (word level and Chinese phonetic alphabet letter level) linguistic representation is used to generate smooth speech parameter trajectory, and then the mel-spectrl distortion and RMSE of F0  between the generated trajectory and target candidates are used to construct a lattice. Finally Normalized cross-correlation is used to search for the best sequence of waveform “tiles” in the lattce. The subjective A/B preference  experimental reuslts show that our proposed hybrid system WESYNTHESIS can outperform both the previous trajectory tiling hybrid system baseline with preference (56\% vs. 27\%) and the state-of-the-art real-time speech synthesis system which uses Tacotron 2 and LPCNet vocoder with prefercence (xx\% vs. xx\%).
+
+  </div>
+  
+  <div style="text-align:center">
+  <p><font face="Arial Unicode MS" size="6">Real Time TTS Systems </font></p>
+  </div>
+    <table width="400" height="200" border="1" align="center" font face="Arial Unicode MS" font size="6">
+    <tr>
+     <td align="center" valign="middle" >&nbsp;&nbsp;<span class="wav_name" >I&nbsp;&nbsp;</span></td>
+     <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Baseline System [1] &nbsp;&nbsp;</span></td>
+   
+    </tr>
+     
+    <tr>
+     <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">II&nbsp;&nbsp;</span></td>
+     <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Baseline System （Tacotron2 [2] + LPCNET [3])&nbsp;&nbsp;</span></td>
+   
+    </tr>
+    
+     <tr>
+     <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">III&nbsp;&nbsp;</span></td>
+     <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Proposed System &nbsp;&nbsp;</span></td>
+   
+  
+     </table>
+     <p><font face="Arial Unicode MS" size="3">[1] Y. Qian, F. K. Soong, Z. -J. Yan, “A unified trajectory tiling approach to high quality speech rendering,” IEEE/ACM Transactions on Audio, Speech and Language Processing, vol. 21, no. 2, pp. 280-290, 2013.</font></p>
+     <p><font face="Arial Unicode MS" size="3">  [2] J. Shen, R. Pang, R. J. Weiss, M. Schuster, N. Jaitly, Z. Yang, Z. Chen, Y. Zhang, Y. Wang, R. Ryan, R. A. Saurous, Y. Agiomyrgiannakis, and Y. Wu, “Natural TTS synthesis by conditioning wavenet on MEL spectrogram predictions,” in Proc. ICASSP pp. 4779–4783, 2018.</font></p>
+     <p><font face="Arial Unicode MS" size="3">[3] J. -M. Valin, J. Skoglund, “LPCNET: Improving Neural Speech Synthesis through Linear Prediction,” in Proc. ICASSP, pp. 5891-5895, 2019.</font></p>
+    <div style="text-align:center">
+  <p><font face="Arial Unicode MS" size="6">Samples synthesized by these systems </font></p>
+  <p><font face="Arial Unicode MS" size="5">Wavs are sampled at 16 kHz and energies are normalized to the samle level (dBFS = -1) to avoid volume influence to subjective listening</font> </font></p>
+  </div>
+       <table width="604" height="69" border="1" align="center">
+    <tr>
+
+     <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Sentence ID &nbsp;&nbsp;</span></td>
+     <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">I&nbsp;&nbsp;</span></td>
+         <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">II&nbsp;&nbsp;</span></td>
+        <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">III&nbsp;&nbsp;</span></td>
+       <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">Ground Truth&nbsp;&nbsp;</span></td>
+        
+  </audio>&nbsp;&nbsp;</td>
+    </tr>
+  
+  
+    <tr>
+  
+      <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">010001&nbsp;&nbsp;</span></td>
+    <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+   <source src="subjective_test2/a/010001.wav" type="audio/wav">  
+  
+  </audio>&nbsp;&nbsp;</td>
+       <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+   <source src="subjective_test2/d/010001.wav" type="audio/wav">  
+  
+  </audio>&nbsp;&nbsp;</td>
+         <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+  <source src="subjective_test2/b/010001.wav" type="audio/wav">  
+  
+  
+  </audio>&nbsp;&nbsp;</td>
+  <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+  <source src="subjective_test2/c/010001.wav" type="audio/wav">  
+  
+  </audio>&nbsp;&nbsp;</td>
+   </tr>
+   
+   <tr>
+  
+    <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">010017&nbsp;&nbsp;</span></td>
+  <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+ <source src="subjective_test2/a/010017.wav" type="audio/wav">  
+
+</audio>&nbsp;&nbsp;</td>
+     <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+ <source src="subjective_test2/d/010017.wav" type="audio/wav">  
+
+</audio>&nbsp;&nbsp;</td>
+       <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+<source src="subjective_test2/b/010017.wav" type="audio/wav">  
+
+
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+<source src="subjective_test2/c/010017.wav" type="audio/wav">  
+
+</audio>&nbsp;&nbsp;</td>
+ </tr>
+
+ <tr>
+  
+  <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">010018&nbsp;&nbsp;</span></td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+<source src="subjective_test2/a/010018.wav" type="audio/wav">  
+
+</audio>&nbsp;&nbsp;</td>
+   <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+<source src="subjective_test2/d/010018.wav" type="audio/wav">  
+
+</audio>&nbsp;&nbsp;</td>
+     <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+<source src="subjective_test2/b/010018.wav" type="audio/wav">  
+
+
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+<source src="subjective_test2/c/010018.wav" type="audio/wav">  
+
+</audio>&nbsp;&nbsp;</td>
+</tr>
+
+<tr>
+  
+  <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">010019&nbsp;&nbsp;</span></td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+<source src="subjective_test2/a/010019.wav" type="audio/wav">  
+
+</audio>&nbsp;&nbsp;</td>
+   <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+<source src="subjective_test2/d/010019.wav" type="audio/wav">  
+
+</audio>&nbsp;&nbsp;</td>
+     <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+<source src="subjective_test2/b/010019.wav" type="audio/wav">  
+
+
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+<source src="subjective_test2/c/010019.wav" type="audio/wav">  
+
+</audio>&nbsp;&nbsp;</td>
+</tr>
+
+<tr>
+  
+  <td align="center" valign="middle">&nbsp;&nbsp;<span class="wav_name">010020&nbsp;&nbsp;</span></td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+<source src="subjective_test2/a/010020.wav" type="audio/wav">  
+
+</audio>&nbsp;&nbsp;</td>
+   <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+<source src="subjective_test2/d/010020.wav" type="audio/wav">  
+
+</audio>&nbsp;&nbsp;</td>
+     <td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+<source src="subjective_test2/b/010020.wav" type="audio/wav">  
+
+
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls>
+<source src="subjective_test2/c/010020.wav" type="audio/wav">  
+
+</audio>&nbsp;&nbsp;</td>
+</tr>
+
+
+ 
+
+     </table> 
+  
+  
+  
+  <p><font face="Arial Unicode MS" size="6">Last Updated: 15-Oct-2020</font></p>
+  <p>　</p>
+  <p>　</p>
+  
+  
+  
+  
+  </body></html>
